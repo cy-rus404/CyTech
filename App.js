@@ -25,7 +25,7 @@ export default function App() {
       </Text>
       <View>
         <View
-          style={{ width: 80, height: 10, backgroundColor: "#fff", margin: 30 }}
+          style={{ width: 80, height: 10, backgroundColor: "#fff", margin: 30,borderRadius:20 }}
         />
       </View>
       <StatusBar style="auto" />
