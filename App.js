@@ -69,8 +69,58 @@ function HomeScreen({ navigation }) {
 }
 
 function DetailsScreen({ navigation }) {
-  return( 
-  <Text>Hi</Text>
+  return (
+    <View>
+      <View style={{ flexDirection: "row" }}>
+        <Image
+          style={{ height: 50, width: 50, margin: 10 }}
+          source={require("./assets/avatar.png")}
+        />
+        <Text
+          style={{
+            marginTop: 20,
+            fontSize: 20,
+            fontFamily: "Avenir next condensed",
+            fontWeight: "bold",
+          }}
+        >
+          Hello, Cyrus
+        </Text>
+        <Image
+          style={{ width: 23, height: 25, marginLeft: 210, marginTop: 20 }}
+          source={require("./assets/bell.png")}
+        />
+      </View>
+      <View
+        style={{
+          height: 200,
+          width: 370,
+          backgroundColor: "#000",
+          margin: 20,
+          borderRadius: 10,
+        }}
+      >
+        <Image
+          style={{ height: 35, width: 60, margin: 10 }}
+          source={require("./assets/master.png")}
+        />
+        <Text style={{ color: "gray", textAlign: "center" }}>
+          Total Balance
+        </Text>
+        <Text
+          style={{
+            color: "#fff",
+            textAlign: "center",
+            fontWeight: "bold",
+            fontSize: 30,
+            fontFamily: "Arial rounded mt bold",
+            marginTop: 3,
+          }}
+        >
+          GH₵ 180,000
+        </Text>
+      </View>
+    </View>
   );
 }
 
