@@ -119,6 +119,28 @@ function DetailsScreen({ navigation }) {
         >
           GH₵ 180,000
         </Text>
+        <Text style={{color:"#fff",marginTop:6,marginLeft:200,marginTop:60,fontFamily:'American Typewriter'}}>Acc No 010078634032</Text>
+      </View>
+      <View>
+        <Text style={{marginLeft:20,fontWeight:'bold',fontSize:20}}>Quick Actions</Text>
+      </View>
+      <View style={{flexDirection:'row'}}>
+      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
+        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/airtime.png')}/>
+      </View>
+      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
+        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/wifi.png')}/>
+      </View>
+      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
+        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/send.png')}/>
+      </View>
+      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
+        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/light.png')}/>
+      </View>
+      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
+        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/tv.png')}/>
+      </View>
+
       </View>
     </View>
   );
