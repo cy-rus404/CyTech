@@ -91,7 +91,8 @@ function DetailsScreen({ navigation }) {
           source={require("./assets/bell.png")}
         />
       </View>
-      <View
+      <TouchableOpacity onPress={() => navigation.navigate("Cards")}
+
         style={{
           height: 200,
           width: 370,
@@ -119,32 +120,533 @@ function DetailsScreen({ navigation }) {
         >
           GH₵ 180,000
         </Text>
-        <Text style={{color:"#fff",marginTop:6,marginLeft:200,marginTop:60,fontFamily:'American Typewriter'}}>Acc No 010078634032</Text>
-      </View>
+        <Text
+          style={{
+            color: "#fff",
+            marginTop: 6,
+            marginLeft: 200,
+            marginTop: 60,
+            fontFamily: "American Typewriter",
+          }}
+        >
+          Acc No 010078634032
+        </Text>
+      </TouchableOpacity>
       <View>
-        <Text style={{marginLeft:20,fontWeight:'bold',fontSize:20}}>Quick Actions</Text>
+        <Text style={{ marginLeft: 20, fontWeight: "bold", fontSize: 20 }}>
+          Quick Actions
+        </Text>
       </View>
-      <View style={{flexDirection:'row'}}>
-      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
-        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/airtime.png')}/>
+      <View style={{ flexDirection: "row" }}>
+        <View
+          style={{
+            width: 60,
+            height: 65,
+            backgroundColor: "#fff",
+            borderRadius: 10,
+            marginTop: 15,
+            marginLeft: 20,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+          }}
+        >
+          <Image
+            style={{
+              height: "70%",
+              width: "70%",
+              resizeMode: "contain",
+              marginTop: 7,
+              marginLeft: 9,
+            }}
+            source={require("./assets/airtime.png")}
+          />
+        </View>
+        <View
+          style={{
+            width: 60,
+            height: 65,
+            backgroundColor: "#fff",
+            borderRadius: 10,
+            marginTop: 15,
+            marginLeft: 20,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+          }}
+        >
+          <Image
+            style={{
+              height: "70%",
+              width: "70%",
+              resizeMode: "contain",
+              marginTop: 7,
+              marginLeft: 9,
+            }}
+            source={require("./assets/wifi.png")}
+          />
+        </View>
+        <View
+          style={{
+            width: 60,
+            height: 65,
+            backgroundColor: "#fff",
+            borderRadius: 10,
+            marginTop: 15,
+            marginLeft: 20,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+          }}
+        >
+          <Image
+            style={{
+              height: "70%",
+              width: "70%",
+              resizeMode: "contain",
+              marginTop: 7,
+              marginLeft: 9,
+            }}
+            source={require("./assets/send.png")}
+          />
+        </View>
+        <View
+          style={{
+            width: 60,
+            height: 65,
+            backgroundColor: "#fff",
+            borderRadius: 10,
+            marginTop: 15,
+            marginLeft: 20,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+          }}
+        >
+          <Image
+            style={{
+              height: "70%",
+              width: "70%",
+              resizeMode: "contain",
+              marginTop: 7,
+              marginLeft: 9,
+            }}
+            source={require("./assets/light.png")}
+          />
+        </View>
+        <View
+          style={{
+            width: 60,
+            height: 65,
+            backgroundColor: "#fff",
+            borderRadius: 10,
+            marginTop: 15,
+            marginLeft: 20,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+          }}
+        >
+          <Image
+            style={{
+              height: "70%",
+              width: "70%",
+              resizeMode: "contain",
+              marginTop: 7,
+              marginLeft: 9,
+            }}
+            source={require("./assets/tv.png")}
+          />
+        </View>
       </View>
-      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
-        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/wifi.png')}/>
+      <View style={{ flexDirection: "row" }}>
+        <Text style={{ margin: 20, fontSize: 20, fontWeight: "bold" }}>
+          Transactions
+        </Text>
+        <Text
+          style={{
+            fontSize: 15,
+            color: "gray",
+            marginTop: 23,
+            marginLeft: 180,
+          }}
+        >
+          View All
+        </Text>
       </View>
-      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
-        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/send.png')}/>
+      <View
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{ height: 50, width: 50, marginTop: 5 }}
+            source={require("./assets/flix.png")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Netflix
+          </Text>
+          <Text
+            style={{
+              color: "red",
+              fontSize: 15,
+              marginLeft: 160,
+              marginTop: 19,
+            }}
+          >
+            -GH₵50.00
+          </Text>
+        </View>
       </View>
-      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
-        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/light.png')}/>
+      <View
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+          marginTop: 10,
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{
+              height: 50,
+              width: 50,
+              marginTop: 5,
+              borderRadius: "50%",
+              marginLeft: 5,
+            }}
+            source={require("./assets/axe.jpg")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Hookup
+          </Text>
+          <Text
+            style={{
+              color: "red",
+              fontSize: 15,
+              marginLeft: 140,
+              marginTop: 19,
+            }}
+          >
+            -GH₵2500.00
+          </Text>
+        </View>
       </View>
-      <View style={{width:60,height:65,backgroundColor:'#fff',borderRadius:10,marginTop:15,marginLeft:20,shadowColor:'#000',shadowOffset:{width:0,height:2},shadowOpacity:0.25,shadowRadius:3.84}}>
-        <Image style={{height:'70%',width:'70%',resizeMode:'contain',marginTop:7,marginLeft:9}} source={require('./assets/tv.png')}/>
+      <View
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+          marginTop: 10,
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{ height: 50, width: 50, marginTop: 5, marginLeft: 5 }}
+            source={require("./assets/spotify.png")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Spotify
+          </Text>
+          <Text
+            style={{
+              color: "red",
+              fontSize: 15,
+              marginLeft: 150,
+              marginTop: 19,
+            }}
+          >
+            -GH₵25.00
+          </Text>
+        </View>
       </View>
-
+      <View
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+          marginTop: 10,
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{
+              height: 50,
+              width: 50,
+              marginTop: 5,
+              borderRadius: "50%",
+              marginLeft: 5,
+            }}
+            source={require("./assets/avr.jpg")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Bro
+          </Text>
+          <Text
+            style={{
+              color: "red",
+              fontSize: 15,
+              marginLeft: 190,
+              marginTop: 19,
+            }}
+          >
+            -GH₵5.00
+          </Text>
+        </View>
       </View>
     </View>
   );
 }
+
+
+function CardScreen({navigation}){
+  return(
+    <View>
+    <View
+
+    style={{
+      height: 150,
+      width: 370,
+      backgroundColor: "#000",
+      margin: 20,
+      borderRadius: 10,
+    }}
+  >
+    <Image
+      style={{ height: 35, width: 60, margin: 10 }}
+      source={require("./assets/master.png")}
+    />
+    <Text style={{ color: "gray", textAlign: "center",bottom:20 }}>
+      Total Balance
+    </Text>
+    <Text
+      style={{
+        color: "#fff",
+        textAlign: "center",
+        fontWeight: "bold",
+        fontSize: 30,
+        fontFamily: "Arial rounded mt bold",
+        marginTop: 3,
+        bottom:20
+      }}
+    >
+      GH₵ 180,000
+    </Text>
+    <Text
+      style={{
+        color: "#fff",
+        marginTop: 6,
+        marginLeft: 200,
+        marginTop: 60,
+        fontFamily: "American Typewriter",
+        bottom:45
+      }}
+    >
+      Acc No 010078634032
+    </Text>
+  </View>
+  <View 
+style={{
+  height: 150,
+  width: 370,
+  backgroundColor: "#000",
+  margin: 20,
+  borderRadius: 10,
+  marginTop:0
+}}
+>
+<Image
+  style={{ height: 35, width: 60, margin: 10 }}
+  source={require("./assets/master.png")}
+/>
+<Text style={{ color: "gray", textAlign: "center",bottom:20 }}>
+  Total Balance
+</Text>
+<Text
+  style={{
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 30,
+    fontFamily: "Arial rounded mt bold",
+    marginTop: 3,
+    bottom:20
+  }}
+>
+  GH₵ 180,000
+</Text>
+<Text
+  style={{
+    color: "#fff",
+    marginTop: 6,
+    marginLeft: 200,
+    marginTop: 60,
+    fontFamily: "American Typewriter",
+    bottom:45
+  }}
+>
+  Acc No 010078634032
+</Text>
+</View>
+<Text style={{fontWeight:'bold',fontSize:20,margin:20}}>Card Settings</Text>
+<TouchableOpacity
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{ height: 50, width: 50, marginTop: 5 }}
+            source={require("./assets/lock.png")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Lock Card
+          </Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+          marginTop:10
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{ height: 50, width: 50, marginTop: 5 }}
+            source={require("./assets/alert.png")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Set Up Alerts
+          </Text>
+        </View>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+          marginTop:10
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{ height: 50, width: 50, marginTop: 5 }}
+            source={require("./assets/password.png")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Change Password
+          </Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#fff",
+          height: 60,
+          width: 380,
+          marginLeft: 20,
+          borderRadius: 10,
+          marginTop:10
+        }}
+      >
+        <View style={{ flexDirection: "row" }}>
+          <Image
+            style={{ height: 50, width: 50, marginTop: 5 }}
+            source={require("./assets/limit.png")}
+          />
+          <Text
+            style={{
+              marginTop: 15,
+              marginLeft: 10,
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
+          >
+            Set Spending Limit
+          </Text>
+        </View>
+      </TouchableOpacity>
+
+</View>
+  )
+}
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -164,6 +666,8 @@ function App() {
           }}
         />
         <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Cards" component={CardScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
